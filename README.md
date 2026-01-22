@@ -19,6 +19,35 @@ The export step produces a manifest (`outputs/outputs_manifest.txt`) that record
 
 Expected artifacts include model comparison tables, tuning tables, threshold sweep outputs, decisioning curves, and a model card. The outputs are derived artifacts only (no raw data), and the manifest is the single source of truth for what was exported in a given run.
 
+## Running and Inspecting the Project in Google Colab (Code + Outputs)
+
+While the `outputs/` folder contains the final generated results, the full logic, detailed explanations, and Python code live in `notebooks/credit_risk_project.ipynb`. To see and interact with the code, you should open the notebook in Google Colab rather than just browsing it on GitHub.
+
+### Option 1 — One-click Colab links (recommended)
+You can open the project in Colab using these links:
+- **[Main Branch](https://colab.research.google.com/github/Jannikwendt/credit-risk-ml-mif/blob/main/notebooks/credit_risk_project.ipynb)**: The most recent version of the project.
+- **[Submission Snapshot (submission-v1)](https://colab.research.google.com/github/Jannikwendt/credit-risk-ml-mif/blob/submission-v1/notebooks/credit_risk_project.ipynb)**: An immutable, graded version of the submission. Guarantees a frozen snapshot.
+
+### Option 2 — Manual Colab UI steps
+1. Go to [https://colab.research.google.com](https://colab.research.google.com)
+2. Click **File** → **Open notebook**
+3. Select the **GitHub** tab
+4. Paste this repository URL: `https://github.com/Jannikwendt/credit-risk-ml-mif`
+5. Select `notebooks/credit_risk_project.ipynb` from the list
+6. Click **Open Notebook**
+
+### How to Make Sure Code Cells Are Visible
+If the notebook opens and you only see the text and charts (outputs):
+- Click **View** → **Expand sections** in the top menu.
+- This ensures all Python code cells are visible and not collapsed.
+- The notebook contains extensive markdown explanations above each code section to guide you through the modeling logic.
+
+### Final Execution Instructions
+To regenerate all results and charts from scratch:
+- Click **Runtime** → **Restart runtime**
+- Click **Runtime** → **Run all**
+- **Note**: All outputs will be regenerated and will overwrite any existing artifacts in the `outputs/` folder within your Colab environment.
+
 ## Run on Google Colab (Reproducibility Test)
 
 This section explains exactly how to reproduce the project outputs from scratch using Google Colab. Colab is a free cloud environment that requires no installation on your computer.
