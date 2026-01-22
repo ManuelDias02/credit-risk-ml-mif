@@ -15,12 +15,28 @@ These links open the notebook directly in the Google Colab environment:
 - **[Submission Snapshot (submission-v1)](https://colab.research.google.com/github/Jannikwendt/credit-risk-ml-mif/blob/submission-v1/notebooks/credit_risk_project.ipynb)**: Use this for grading. It is a frozen, immutable snapshot of the project.
 - **[Main Branch](https://colab.research.google.com/github/Jannikwendt/credit-risk-ml-mif/blob/main/notebooks/credit_risk_project.ipynb)**: The most recent "live" version of the code.
 
-### Option B: Manual Steps
-1. Go to [https://colab.research.google.com](https://colab.research.google.com).
-2. Click **File** → **Open notebook**.
-3. Select the **GitHub** tab.
-4. Paste the repository URL: `https://github.com/Jannikwendt/credit-risk-ml-mif`.
-5. Select `notebooks/credit_risk_project.ipynb` and click **Open Notebook**.
+**⚠️ Important: Opening the notebook does not include the data files. You must upload the CSVs before running (see the Mandatory step below).**
+
+### Required Step: Upload Data Files (Mandatory)
+Google Colab provides the code environment, but it does not automatically include the dataset files when you open a single notebook via a link. The notebook is designed to check for these files immediately to ensure valid results.
+
+**Why this error appears (AssertionError / FileNotFoundError):**
+If you try to run the first few cells before uploading, you will see an error. This is **expected and correct**. It is a safety feature to prevent the model from running on missing or incorrect data.
+
+To fix this and run the project, run this code in a new cell at the top of the notebook:
+
+```python
+from google.colab import files
+files.upload()
+```
+Upload `lending_club_train.csv` and `lending_club_test.csv`. Then run these commands in a cell to move them into the expected folder:
+
+```bash
+!mkdir -p data
+!mv lending_club_train.csv data/
+!mv lending_club_test.csv data/
+```
+These two CSV files are the **only required inputs** for the project to function.
 
 ### How to Ensure Code Cells Are Visible
 If the notebook opens and you only see text and charts:
