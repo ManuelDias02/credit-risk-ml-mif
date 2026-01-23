@@ -23,12 +23,42 @@
 ## Models Compared
 Model performance is summarized in `model_comparison_validation.csv`. The final model is selected based on validation AUC, with AUC gap used to monitor overfitting risk.
 
+## Final Model
+
+- **Model**: Random Forest (sklearn)
+- **Feature set**: FeatureSet_B (grade / sub_grade removed)
+- **Preprocessing**: Same pipeline as the notebook (OHE for categoricals, imputation for missing values)
+- **Hyperparameters**:
+  - n_estimators = 600
+  - max_features = 'sqrt'
+  - max_depth = 10
+  - min_samples_split = 10
+  - min_samples_leaf = 50
+  - class_weight = 'balanced'
+  - bootstrap = True
+
+## Final Metrics
+
+- **Validation AUC**: 0.695576 (FeatureSet_B)
+- **Test AUC**: 0.707122
+- **Test RMSE**: 0.450406
+- **Threshold used on test**: 0.58 (validation-chosen; not re-optimized)
+
+## Decision Policy
+
+- **Thresholds reported**: 0.50 and 0.58
+- **Approval rate @ 0.50**: 0.652981
+- **Default rate among approved @ 0.50**: 0.125756
+- **Approval rate @ 0.58**: 0.833004
+- **Default rate among approved @ 0.58**: 0.153081
+
 ## Final Policy (Validation)
-- Final model: Random Forest
-- Validation AUC: 0.6954
-- Validation RMSE: 0.4625
-- Optimal threshold: 0.58
-- Approval rate: 0.786
+
+- **Final model**: Random Forest
+- **Validation AUC**: 0.695576
+- **Validation RMSE**: 0.4625
+- **Optimal threshold**: 0.58
+- **Approval rate (validation)**: 0.786
 - Expected value: -21
 
 ## Confusion Matrices (Validation)
