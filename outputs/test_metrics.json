@@ -1,0 +1,18 @@
+{
+  "test_auc": 0.7071222471676292,
+  "test_rmse": 0.450406370769011,
+  "threshold_050": {
+    "threshold": 0.5,
+    "approval_rate": 0.6529806553493881,
+    "default_rate_approved": 0.12575574365175332,
+    "approvals": 1654,
+    "defaults_approved": 208
+  },
+  "threshold_optimal_validation": {
+    "threshold": 0.5800000000000001,
+    "approval_rate": 0.833004342676668,
+    "default_rate_approved": 0.15308056872037915,
+    "approvals": 2110,
+    "defaults_approved": 323
+  }
+}

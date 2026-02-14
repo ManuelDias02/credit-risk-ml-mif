@@ -1,17 +1,21 @@
-timestamp: 2026-01-19T18:15:33.659422Z
-git_commit: 46b991bda479d328653b76e69d1a86c92fdf82fc
+git_commit: f6c34c06dfed153c3fd3e4da317b1fc56d52686f
 files:
-- model_card.md | 1.8 KB | Executive summary of model, metrics, and policy.
-- model_comparison_validation.csv | 0.3 KB | Validation metrics for all models.
-- tuning_decision_tree.csv | 0.7 KB | Decision Tree tuning grid results.
-- tuning_random_forest.csv | 1.5 KB | Random Forest tuning grid results.
-- tuning_gradient_boosting.csv | 0.4 KB | Gradient Boosting tuning grid results.
-- feature_importance_final_model.csv | 3.3 KB | Feature importances for final model.
-- feature_importance_final_model.png | 108.3 KB | Top-10 feature importance chart.
-- ev_curve_validation.png | 103.4 KB | Expected value vs threshold curve.
-- approval_rate_curve_validation.png | 90.6 KB | Approval rate vs threshold curve.
-- confusion_matrix_validation_050.csv | 0.1 KB | Confusion table at threshold=0.50.
-- confusion_matrix_validation_optimal.csv | 0.1 KB | Confusion table at optimal threshold.
-- threshold_sweep_validation.csv | 4.0 KB | Threshold sweep metrics on validation.
-- threshold_sensitivity.csv | 0.2 KB | Sensitivity of optimal threshold to payoff shifts.
-- outputs_manifest.txt | 1.2 KB | Manifest of exported outputs.
+- approval_rate_curve_test.png | 93.0 KB | 654977128c4d86ccc561f0d1ba8057daba67887e054eb1aca0d4bda22e163b43 | Approval rate vs threshold curve (test).
+- approval_rate_curve_validation.png | 92.8 KB | ff91a28cb10c087ac9b9cf860a1e11eadf26aacb8021b0d633eb0f8ef233c35b | Approval rate vs threshold curve.
+- confusion_matrix_test_050.csv | 0.1 KB | ee16467e4af7ac32cd7f9a52b4deab101aebe820de45424dc347f65568356e2b | Test confusion table at threshold=0.50.
+- confusion_matrix_test_optimal.csv | 0.1 KB | dd0302e4d31019429c685e154ef260c6d07a8f23f3161d3478423ca5cb5bc332 | Test confusion table at validation-optimal threshold.
+- confusion_matrix_validation_050.csv | 0.1 KB | 7ec55cded958a019f6142dbc158d7eca734cad9837d54be3ceecb3f9e1014b26 | Confusion table at threshold=0.50.
+- confusion_matrix_validation_optimal.csv | 0.1 KB | d6d8f50fe25902bef88267271b9bf74a63e7afc2b5101730e9c28be77e181be5 | Confusion table at optimal threshold.
+- ev_curve_test.png | 106.9 KB | 2527d52e80397c232f14eacd6f986134bdcbd1f54d74792e800f7bc111dd763e | Expected value vs threshold curve (test).
+- ev_curve_validation.png | 106.5 KB | d6642929b3ed3fd58a61f9ff0d9d2c6d23f6a2f76635347dffe7b1cef98845f6 | Expected value vs threshold curve.
+- feature_importance_final_model.csv | 1.8 KB | 7e57ea57df6a3db7902d2cc5424342fd4ebb2a2a60d8cf6e5d9cd84028faa3dd | Feature importances for final model.
+- feature_importance_final_model.png | 107.3 KB | 745bbefe1d4edb5c44ff33f6c10a34f89613a02d9f2ff55e2ef8e36112472c2b | Top-10 feature importance chart.
+- final_report.md | 2.8 KB | 13c446612716724f3d8ebcd8708e0be2cd6a32809a5524eded6194a01776b300 | Comprehensive project summary report.
+- model_card.md | 2.4 KB | 4a6d26440a8f6224f81eb1b444aa30af0e1ad801d13f8b820bfdb6aa29131a7e | Executive summary of model, metrics, and policy.
+- model_comparison_validation.csv | 0.4 KB | 89a56e337672221a6b8abc2f62dc17d2851f5ec8550ec9f3c842778e6c757e9c | Validation metrics for all models.
+- test_metrics.json | 0.5 KB | 31dbc170fa7407ce18ab2c07719ed9a7ff1545cf3ce057d6aa5d310b3fa5274b | Holdout test metrics (single-use evaluation).
+- threshold_sensitivity.csv | 0.2 KB | 4bebbdb899a90bc23cc439a1d5fbb81bbfc8a70fdb15de464778a851a5aee3e8 | Sensitivity of optimal threshold to payoff shifts.
+- threshold_sweep_validation.csv | 4.4 KB | 7c114aca94fd9b72f3d96e58eb1714e44367577c6eb1c8476dd24b5c657a1a58 | Threshold sweep metrics on validation.
+- tuning_decision_tree.csv | 0.7 KB | 6b8349c84f1d3ec71eee92dae413231114180e367546247c5a13f53e4f40009c | Decision Tree tuning grid results.
+- tuning_gradient_boosting.csv | 3.0 KB | a1d3c7e9beafe0f0a10df65b919af1f25c9080eff346ae2f2e4ce769a42d8107 | Gradient Boosting tuning grid results.
+- tuning_random_forest.csv | 3.2 KB | 366ee6ac3a0c6ddf2fd96e8d2f1fb7c27f0d7ef3dc063195c3661fc59322dc65 | Random Forest tuning grid results.
